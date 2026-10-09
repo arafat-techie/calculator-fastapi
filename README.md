@@ -43,19 +43,3 @@ The frontend provides an interactive calculator UI, while the FastAPI backend ha
 
 ---
 
-## 📁 Project Structure
-
-```text
-calculator/
-│
-├── frontend/
-│   ├── index.html
-│   ├── style.css
-│   └── script.js
-│
-├── backend/
-│   └── main.py
-│
-├── .gitignore
-│
-└── README.md
