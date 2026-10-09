@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #1a0b12,
+        #3b1f2b,
+        #5c2633
+    );
+}
+
+
+/* Calculator */
+
+.calculator {
+    width: 360px;
+
+    padding: 25px;
+
+    border-radius: 25px;
+
+    background: rgba(255, 255, 255, 0.1);
+
+    backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+
+    animation: appear 0.7s ease;
+}
+
+
+/* Animation */
+
+@keyframes appear {
+
+    from {
+        opacity: 0;
+        transform: scale(0.8) translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+
+}
+
+
+/* Heading */
+
+h1 {
+    text-align: center;
+
+    color: white;
+
+    margin-bottom: 20px;
+
+    font-size: 30px;
+}
+
+
+/* Display */
+
+.display {
+    width: 100%;
+
+    height: 75px;
+
+    margin-bottom: 20px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    outline: none;
+
+    background: #f8edef;
+
+    color: #3b1f2b;
+
+    font-size: 32px;
+
+    font-weight: bold;
+
+    text-align: right;
+}
+
+
+/* Buttons Grid */
+
+.buttons {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 12px;
+}
+
+
+/* All buttons */
+
+button {
+
+    height: 65px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: all 0.15s ease;
+}
+
+
+/* Number buttons */
+
+.number {
+
+    background: #f8edef;
+
+    color: #3b1f2b;
+
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Number hover */
+
+.number:hover {
+
+    background: white;
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Number click */
+
+.number:active {
+
+    transform: scale(0.9);
+}
+
+
+/* Operators */
+
+.operator {
+
+    background: #e8b4b8;
+
+    color: #3b1f2b;
+
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Operator hover */
+
+.operator:hover {
+
+    background: #f3c7ca;
+
+    transform: translateY(-4px);
+}
+
+
+/* Operator click */
+
+.operator:active {
+
+    transform: scale(0.9);
+}
+
+
+/* Clear */
+
+.clear {
+
+    background: #8f4652;
+
+    color: white;
+}
+
+
+.clear:hover {
+
+    background: #a95360;
+
+    transform: translateY(-4px);
+}
+
+
+.clear:active {
+
+    transform: scale(0.9);
+}
+
+
+/* Equal */
+
+.equal {
+
+    width: 100%;
+
+    margin-top: 15px;
+
+    height: 65px;
+
+    background: #f8edef;
+
+    color: #3b1f2b;
+
+    font-size: 30px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+.equal:hover {
+
+    background: white;
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+}
+
+
+.equal:active {
+
+    transform: scale(0.95);
+}
+
+
+/* Result */
+
+.result-box {
+
+    margin-top: 18px;
+
+    padding: 12px;
+
+    border-radius: 12px;
+
+    background: rgba(0, 0, 0, 0.15);
+
+    text-align: center;
+}
+
+
+#result {
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+}
